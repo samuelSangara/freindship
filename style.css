@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+h1 #title{
+    text-align: center;
+}
+
+p #description{
+    text-align: center;
+}
+
+#survey-form{
+    align-content: center;
+}
+
