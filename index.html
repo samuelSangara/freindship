@@ -4,36 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>survey</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
 </head>
 <body>
-    <h1 id="title">freeCodeCamp</h1>
-    <p id="description">thank you for taking the time to help us to improve the plateform</p>
-    <form action="" id="survey-form">
-        <label for="">name</label>
-        <input type="text" name="" id="name" required  placeholder="type your name">
-        <label for="">email</label>
-        <input type="email" name="" id="email" required placeholder="type your email">
-        <label for="">age</label>
-        <input type="number" name="" id="number" min="5" max="100" placeholder="type your age">
-        <select name="" id="dropdown" placeholder="select a role">
-            <option value="">student</option>
-            <option value="">full time job</option>
-
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us to improve the plateform.</p>
+    
+    
+    <form id="survey-form">
+        
+        <div class="control-forms">
+            <label id="name-form"for="name">Name</label>
+            <input type="text" id="name" required  placeholder="Type your name" class="input-control">
+        </div>
+        
+        <div class="control-forms">
+            <label id="email-form" for="email">Email</label>
+            <input type="email" id="email" placeholder="Type your email"  class="input-control" required>
+        </div>
+        
+        <div class="control-forms">
+            <label id="age-form" for="age">Age</label>
+            <input type="number" id="number" min="5" max="100" placeholder="Select your age" class="input-control">
+        </div>
+        
+        <div class="control-forms">
+        <p id="role-select">Which option best describes your current role?</p>
+        <select class="input-control" placeholder="select your role" id="role">
+            <option disabled selected value>Select a role</option>
+            <option value="">Student</option>
+            <option value="">Full time Job</option>
+            <option value="">Full time learner</option>
+            <option value="">Other</option>
         </select>
-        <label for="">would you recommend freecodecomp to a freind?</label>
-        <label for="">
-        <input type="radio" name="" id="">Yes</label>
-        <label for="">
-        <input type="radio" name="" id="">No</label>
-        <label for="">
-        <input type="radio" name="" id="">Not sure</label>
+        </div>
+       
+       <div class="control-forms">
+         <label for="">Would you recommend freecodecomp to a freind?</label>
+         <label for="">
+         <input type="radio" name="" id="yes">Yes</label>
+         <label for="">
+         <input type="radio" name="" id="no">No</label>
+         <label for="">
+         <input type="radio" name="" id="not-sure">Not sure</label>
+       </div>
 
-        <select name="" id="">
-            <option value="">challenges</option>
-            <option value="">project</option>
-            <option value="">community</option>
+       <div class="control-forms">
+        <p id="feature">What is your favourite feature of freeCodeCamp?</p>
+        <select name="" class="input-control">
+            <option disabled selected value>Select a role</option>
+            <option value="">Challenges</option>
+            <option value="">Project</option>
+            <option value="">Community</option>
         </select>
+       </div>
+
+        <div class="control-forms">
+        <p id="improve">What would you like to see improved? (Check that apply)</p>
+       
+        <label>
+            <input type="checkbox" value="front-end projects"> Front End Projects
+        </label>
+        
+        <label>
+            <input type="checkbox"  value="back-end projects"> Back End Projects
+        </label>
+        
+        <label>
+            <input type="checkbox" value="Challenges" > Challenges
+        </label>
+        
+        <label>
+            <input type="checkbox" value="Videos"> 
+            Videos
+        </label>
+
+        <label>
+            <input type="checkbox" value="open-source community"> Open source community
+        </label>
+        </div>
+
+        <div class="control-forms">
+            <p id="suggestions"> Any comments or suggestions?</p>
+            <textarea class="comment-area" placeholder="Place your comment here...">
+            </textarea>
+        </div>
+        
+        
+        <div class="control-forms">
+            <button class="button" type="submit">Submit</button>
+        </div>
+       
+        
     </form>
 </body>
 </html>
